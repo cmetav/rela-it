@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p .",
+    "lint": "eslint -c eslint.config.mjs --fix",
+    "pretty": "prettier --write .",
     "test": "jest",
-    "changelog": "npx conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js",
+    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js",
     "prepare": "husky"
   },
   "keywords": [],
@@ -19,18 +21,26 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/cz-commitlint": "^19.6.1",
+    "@eslint/js": "^9.17.0",
     "@release-it/conventional-changelog": "^9.0.3",
     "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
     "babel-jest": "^29.7.0",
     "commitizen": "^4.3.1",
     "conventional-changelog": "^6.0.0",
     "conventional-changelog-cli": "^5.0.0",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
     "nodemon": "^3.1.9",
     "release-it": "^17.10.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1"
   },
   "husky": {
     "hooks": {

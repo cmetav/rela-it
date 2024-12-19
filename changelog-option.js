@@ -3,26 +3,26 @@ module.exports = {
     transform: (commit, context) => {
       switch (commit.type) {
         case 'feat':
-          commit.type = '✨ Features';
-          break;
+          commit.type = '✨ Features'
+          break
         case 'fix':
-          commit.type = '🐛 Bug Fixes';
-          break;
+          commit.type = '🐛 Bug Fixes'
+          break
         case 'perf':
-          commit.type = '⚡ Performance Improvements';
-          break;
+          commit.type = '⚡ Performance Improvements'
+          break
         case 'revert':
-          commit.type = '⏪ Reverts';
-          break;
+          commit.type = '⏪ Reverts'
+          break
         default:
-          break;
+          break
       }
 
       if (commit.revert) {
-        commit.type = '⏪ Reverts';
+        commit.type = '⏪ Reverts'
       }
 
       return
-    }
-  }
+    },
+  },
 }

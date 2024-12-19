@@ -1,10 +1,8 @@
 {
-  "plugins":{
-    "@release-it/conventional-changelog":{
+  "plugins": {
+    "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
-      "preset":{
-
-      }
+      "preset": {}
     }
   }
 }
