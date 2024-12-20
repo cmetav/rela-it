@@ -4,18 +4,15 @@
 
 # [0.2.0](https://github.com/cmetav/rela-it/compare/0.1.0...0.2.0) (2024-12-20)
 
-
-* add some template ([1154d07](https://github.com/cmetav/rela-it/commit/1154d07ce70363a6c26f9a8d0665579853ecf484))
-
+- add some template ([1154d07](https://github.com/cmetav/rela-it/commit/1154d07ce70363a6c26f9a8d0665579853ecf484))
 
 ### changlelog
 
-* **changlelog:** changelog style ([ec64a16](https://github.com/cmetav/rela-it/commit/ec64a1683e0b8e18b5a9af656f4815c497599356))
-
+- **changlelog:** changelog style ([ec64a16](https://github.com/cmetav/rela-it/commit/ec64a1683e0b8e18b5a9af656f4815c497599356))
 
 ### templates
 
-* **templates:** add request template ([a78ff59](https://github.com/cmetav/rela-it/commit/a78ff592b22be077c64d80778db509ae9eca9d40))
+- **templates:** add request template ([a78ff59](https://github.com/cmetav/rela-it/commit/a78ff592b22be077c64d80778db509ae9eca9d40))
 
 # [0.1.0](https://github.com/cmetav/rela-it/compare/0.0.1...0.1.0) (2024-12-20)
 

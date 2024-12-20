@@ -18,7 +18,7 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
-        "name": "angular",
+        "name": "conventionalcommits",
         "types": [
           {
             "type": "feat",
@@ -31,10 +31,11 @@
         ]
       },
       "infile": "CHANGELOG.md",
-      "header": "# Changelog",
+      "header": "# CHANGELOG \n\n",
       "writerOpts": {
         "groupBy": "scope"
-      }
+      },
+      "commitUrlFormat": "https://github.com/cmetav/rela-it/commit/{{hash}}"
     }
   },
   "hooks": {
