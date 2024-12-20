@@ -13,7 +13,7 @@
     "verify:commitlint": "commitlint --from HEAD~1 --to HEAD --verbose",
     "prepare": "husky install",
     "release:dry": "release-it --dry-run --no-npm",
-    "release": "release-it -conventionalcommits"
+    "release": "release-it -p conventionalcommits"
   },
   "keywords": [
     "release-it"
