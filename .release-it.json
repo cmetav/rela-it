@@ -17,9 +17,24 @@
   },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "preset": "angular",
+      "preset": {
+        "name": "angular",
+        "types": [
+          {
+            "type": "feat",
+            "section": "⭐️ Features"
+          },
+          {
+            "type": "fix",
+            "section": "🐞 Bug Fixes"
+          }
+        ]
+      },
       "infile": "CHANGELOG.md",
-      "header": "# Changelog"
+      "header": "# Changelog",
+      "writerOpts": {
+        "groupBy": "scope"
+      }
     }
   },
   "hooks": {
