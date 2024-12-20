@@ -1,5 +1,8 @@
 const commitlintConfig = {
-  extends: ['@commitlint/config-angular'],
+  extends: [
+    '@commitlint/config-conventional',
+    // '@commitlint/config-angular'
+  ],
   rules: {
     // type 允许的类型
     'type-enum': [

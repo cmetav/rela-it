@@ -5,11 +5,11 @@
     "push": true,
     "commit": true,
     "tag": true,
-    "requireCommits": false,
-    "requireCleanWorkingDir": false
+    "tagName": "${version}"
   },
   "github": {
-    "release": true
+    "release": true,
+    "web": true
   },
   "npm": {
     "publish": false,
@@ -41,6 +41,6 @@
   "hooks": {
     "before:init": ["npm run lint"],
     "after:init": ["npm run test"],
-    "after:bump": "npm run lint && git add -u"
+    "after:bump": "git add -u"
   }
 }
