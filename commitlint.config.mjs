@@ -1,5 +1,5 @@
 const commitlintConfig = {
-  extends: ['@commitlint/config-conventional'],
+  extends: ['@commitlint/config-angular'],
   rules: {
     // type 允许的类型
     'type-enum': [
@@ -17,6 +17,17 @@ const commitlintConfig = {
         'pref', // 性能优化
         'style', // 代码或工程，样式调整
         'test', // 测试用例
+      ],
+    ],
+    'subject-case': [
+      2,
+      'always',
+      [
+        'sentence-case',
+        'start-case',
+        'pascal-case',
+        'upper-case',
+        'lower-case',
       ],
     ],
     'type-case': [0],

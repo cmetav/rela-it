@@ -1,6 +1,7 @@
 {
+  "$schema": "https://unpkg.com/release-it/schema/release-it.json",
   "git": {
-    "commitMessage": "chore(release): v${version}",
+    "commitMessage": "chore(): release v${version}",
     "push": true,
     "commit": true,
     "tag": true,
@@ -8,8 +9,7 @@
     "requireCleanWorkingDir": false
   },
   "github": {
-    "release": true,
-    "draft": true
+    "release": true
   },
   "npm": {
     "publish": false,
@@ -23,7 +23,8 @@
     }
   },
   "hooks": {
-    "before:init": "npm test",
-    "after:bump": ""
+    "before:init": ["git pull"],
+    "after:init": ["npm run lint", "npm run test"],
+    "after:bump": "npm run lint && git add -u"
   }
 }

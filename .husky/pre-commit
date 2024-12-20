@@ -1,4 +1,5 @@
 #!/bin/sh
 # . "$(dirname "$0")/_/husky.sh"
-echo -e "will execute lint-staged"
+# echo -e "will execute lint-staged"
+
 npx --no-install lint-staged
