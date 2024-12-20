@@ -18,7 +18,7 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
-        "name": "conventionalcommits",
+        "name": "angular",
         "types": [
           {
             "type": "feat",
@@ -31,7 +31,7 @@
         ]
       },
       "infile": "CHANGELOG.md",
-      "header": "# CHANGELOG \n\n",
+      "header": "# CHANGELOG",
       "writerOpts": {
         "groupBy": "scope"
       },

@@ -1,6 +1,6 @@
 {
   "name": "release-test",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "verify:commitlint": "commitlint --from HEAD~1 --to HEAD --verbose",
     "prepare": "husky install",
     "release:dry": "release-it --dry-run --no-npm",
-    "release": "release-it"
+    "release": "release-it --ci"
   },
   "keywords": [
     "release-it"
