@@ -11,6 +11,7 @@
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js",
     "release:dry": "release-it --dry-run --no-npm",
     "commitlint": "commitlint --config commitlint.config.mjs -e -V",
+    "verify:commitlint": "commitlint --from HEAD~1 --to HEAD --verbose",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -51,9 +52,11 @@
     }
   },
   "lint-staged": {
-    "lib/*_/_.{ts,json}": [
-      "npm run lint",
-      "git add"
+    "lib/**/*.{js,json,ts,scss,css,vue,html}": [
+      "pnpm lint"
+    ],
+    "./*.{js,mjs,ts,json,html}": [
+      "pnpm pretty"
     ]
   },
   "dependencies": {

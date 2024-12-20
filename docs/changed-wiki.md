@@ -70,3 +70,16 @@ Push：推送提交；
 ```
 
 
+# NPM package.json
+
+```
+$ commitlint --config commitlint.config.mjs -e -V
+-V enable verbose
+-e read last commit message from the specified file or fallbacks to ./.git/COMMIT_EDITMSG
+
+## Verify commitlint
+
+ npx commitlint --from HEAD~1 --to HEAD --verbose
+
+```
+
